@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IronSide Connect</string>
+    <string name="notification_channel_ble">Device Session</string>
+    <string name="notification_channel_ble_desc">Active medical device monitoring session</string>
+    <string name="notification_monitoring_title">Monitoring Active</string>
+    <string name="notification_monitoring_text">Connected to %1$s</string>
+    <string name="biometric_prompt_title">Authenticate</string>
+    <string name="biometric_prompt_subtitle">Access IronSide Connect</string>
+    <string name="biometric_prompt_description">Confirm your identity to view patient data</string>
+    <string name="biometric_prompt_negative">Use PIN</string>
+</resources>

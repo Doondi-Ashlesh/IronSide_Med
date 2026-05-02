@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    FDA Cybersecurity Guidance: Prohibit cleartext traffic.
+    Certificate pinning is enforced at the OkHttp layer for all API calls.
+    This config blocks all cleartext HTTP as a defence-in-depth measure.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Trust only the system CA store — no user-installed CAs -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- OTA firmware update endpoint — certificate pinning enforced in code -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">api.ironsidemedical.com</domain>
+        <pin-set expiration="2026-01-01">
+            <!-- SHA-256 of DER-encoded SubjectPublicKeyInfo — rotate before expiration -->
+            <pin digest="SHA-256">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</pin>
+            <pin digest="SHA-256">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB=</pin>
+        </pin-set>
+    </domain-config>
+</network-security-config>
