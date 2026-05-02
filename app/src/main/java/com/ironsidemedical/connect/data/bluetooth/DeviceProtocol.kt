@@ -83,7 +83,7 @@ object DeviceProtocol {
             ((data[offset + 3].toLong() and 0xFF) shl 24)
     }
 
-    /** CRC-16/CCITT-FALSE — poly 0x1021, init 0xFFFF, no reflection */
+    /** CRC-16/CCITT-FALSE - poly 0x1021, init 0xFFFF, no reflection */
     fun verifyCrc16(data: ByteArray, expected: UShort): Boolean {
         var crc = 0xFFFF
         for (byte in data) {

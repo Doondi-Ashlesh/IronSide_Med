@@ -202,7 +202,7 @@ class BleGattManager @Inject constructor(
             serviceDiscoveryDeferred?.complete(hasVitals)
         }
 
-        @Deprecated("Deprecated in GATT API 33 — handled via onCharacteristicRead(gatt, char, value, status)")
+        @Deprecated("Deprecated in GATT API 33 - handled via onCharacteristicRead(gatt, char, value, status)")
         override fun onCharacteristicRead(
             g: BluetoothGatt,
             characteristic: BluetoothGattCharacteristic,

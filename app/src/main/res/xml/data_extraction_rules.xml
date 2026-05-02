@@ -2,7 +2,7 @@
 <!--
     Exclude all app data from Android backup and cloud sync.
     PHI (Protected Health Information) must never leave the device
-    via Android Backup — encrypted export is handled by the app itself.
+    via Android Backup - encrypted export is handled by the app itself.
 -->
 <data-extraction-rules>
     <cloud-backup>

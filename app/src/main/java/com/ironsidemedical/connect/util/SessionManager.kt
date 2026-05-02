@@ -11,7 +11,7 @@ import javax.inject.Singleton
 /**
  * Tracks the current authenticated user and device session.
  *
- * Sessions are ephemeral — they survive process death only as far as the
+ * Sessions are ephemeral - they survive process death only as far as the
  * audit log is concerned. On restart the user must re-authenticate via
  * biometrics or PIN (satisfying FDA MFA guidance for medical apps).
  */

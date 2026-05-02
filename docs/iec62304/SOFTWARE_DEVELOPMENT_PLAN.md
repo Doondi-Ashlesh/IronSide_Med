@@ -1,4 +1,4 @@
-# IronSide Connect — Software Development Plan
+# IronSide Connect - Software Development Plan
 **Document ID:** SDP-001  
 **Version:** 1.0.0  
 **Safety Class:** IEC 62304 Class B  
@@ -64,7 +64,7 @@ No layer may depend on a layer above it. The domain layer has zero Android depen
 ### 3.5 Software Unit Implementation (§5.5)
 **Coding standards:**
 - Kotlin 2.x; no Java interop in new code
-- `kotlinx.coroutines` for all async operations — no raw threads
+- `kotlinx.coroutines` for all async operations - no raw threads
 - All suspend functions handle cancellation gracefully
 - No force-unwrap (`!!`) except where nullability is a programmer error
 - No `System.exit()` or uncaught exception swallowers
@@ -119,7 +119,7 @@ All defects discovered in any phase are tracked in the project issue tracker wit
 
 | Library | Version | Source | Evidence of Safety |
 |---|---|---|---|
-| Android API | 26–35 | Google | CTS certification |
+| Android API | 26-35 | Google | CTS certification |
 | SQLCipher | 4.5.4 | Zetetic | FIPS 140-2 validation |
 | Kotlin stdlib | 2.0.21 | JetBrains | Open source, auditable |
 | Hilt | 2.52 | Google | Widely deployed, tracked CVEs |

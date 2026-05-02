@@ -124,7 +124,7 @@ private fun AuditEventRow(event: AuditEvent) {
 private fun IntegrityStatusCard(status: IntegrityStatus, onVerify: () -> Unit) {
     val (icon, color, label) = when (status) {
         IntegrityStatus.UNKNOWN -> Triple(Icons.Default.VerifiedUser, MaterialTheme.colorScheme.primary, "Tap to verify chain integrity")
-        IntegrityStatus.VALID -> Triple(Icons.Default.CheckCircle, SafeGreenColor, "Audit chain verified — no tampering detected")
+        IntegrityStatus.VALID -> Triple(Icons.Default.CheckCircle, SafeGreenColor, "Audit chain verified - no tampering detected")
         IntegrityStatus.COMPROMISED -> Triple(Icons.Default.Error, AlertRedColor, "WARNING: Audit chain integrity check FAILED")
     }
 

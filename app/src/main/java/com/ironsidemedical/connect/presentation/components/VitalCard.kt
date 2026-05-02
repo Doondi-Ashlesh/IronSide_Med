@@ -34,7 +34,7 @@ import com.ironsidemedical.connect.presentation.theme.SafeGreenColor
  * Displays a single vital-sign reading with alert-state colour animation.
  *
  * Uses a smooth color transition (300 ms) to draw attention to out-of-range
- * values without the jarring flash of an instant color change — a deliberate
+ * values without the jarring flash of an instant color change - a deliberate
  * UX choice to reduce alarm fatigue while still surfacing clinical alerts.
  */
 @Composable

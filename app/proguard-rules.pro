@@ -1,4 +1,4 @@
-# IronSide Connect — ProGuard rules
+# IronSide Connect - ProGuard rules
 # Medical device software: preserve stack traces for post-market surveillance
 
 -keepattributes SourceFile,LineNumberTable

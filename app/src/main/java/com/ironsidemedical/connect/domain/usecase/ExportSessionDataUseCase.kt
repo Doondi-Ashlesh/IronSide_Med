@@ -17,7 +17,7 @@ import javax.inject.Inject
 /**
  * Exports session data to an encrypted JSON file in the app's private storage.
  *
- * The file is written to [Context.getFilesDir] — this directory is excluded from
+ * The file is written to [Context.getFilesDir] - this directory is excluded from
  * Android Backup and inaccessible to other apps without root.
  * Sharing must go through a FileProvider with intent-based access control.
  *

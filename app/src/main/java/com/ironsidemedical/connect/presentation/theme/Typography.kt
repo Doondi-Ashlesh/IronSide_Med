@@ -34,7 +34,7 @@ val IronSideTypography = Typography(
         fontSize = 14.sp,
         letterSpacing = 0.5.sp,
     ),
-    // Monospaced style for numeric readouts — readability at a glance
+    // Monospaced style for numeric readouts - readability at a glance
     displayMedium = TextStyle(
         fontWeight = FontWeight.Bold,
         fontSize = 40.sp,

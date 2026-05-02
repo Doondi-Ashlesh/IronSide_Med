@@ -1,4 +1,4 @@
-# IronSide Connect — Cybersecurity Plan
+# IronSide Connect - Cybersecurity Plan
 **Document ID:** CSP-001  
 **Version:** 1.0.0  
 **Reference:** FDA "Cybersecurity in Medical Devices: Quality System Considerations and Content of Premarket Submissions" (September 2023)  

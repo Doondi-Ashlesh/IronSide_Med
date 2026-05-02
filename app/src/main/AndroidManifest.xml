@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Bluetooth permissions — Android 12+ uses BLUETOOTH_SCAN/CONNECT instead of BLUETOOTH -->
+    <!-- Bluetooth permissions - Android 12+ uses BLUETOOTH_SCAN/CONNECT instead of BLUETOOTH -->
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN"
         android:usesPermissionFlags="neverForLocation" />
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />

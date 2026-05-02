@@ -20,7 +20,7 @@ Android companion application for IronSide Medical devices.
 ┌───────────────────▼─────────────────────────────────┐
 │                Domain Layer                         │
 │  Use Cases · Domain Models · Repository interfaces  │
-│  (zero Android dependencies — fully unit-testable)  │
+│  (zero Android dependencies - fully unit-testable)  │
 └───────────────────┬─────────────────────────────────┘
                     │
 ┌───────────────────▼─────────────────────────────────┐
@@ -37,22 +37,22 @@ Android companion application for IronSide Medical devices.
 - Full GATT lifecycle: connect → MTU negotiation → service discovery → auth → notify
 - HMAC-SHA256 device-level authentication before any data is consumed
 - Foreground `Service` keeps session alive when app is backgrounded
-- Coroutine-based GATT callback bridge — no raw threads, clean cancellation
+- Coroutine-based GATT callback bridge - no raw threads, clean cancellation
 
 ### Medical Device Software (IEC 62304 Class B)
 - Clean Architecture: Domain layer has zero Android dependencies
 - All async code uses structured concurrency (Coroutines + Flow)
-- Room migrations required — no destructive fallbacks for patient data
+- Room migrations required - no destructive fallbacks for patient data
 - Build metadata (`SOFTWARE_VERSION`, `SOFTWARE_SAFETY_CLASS`) embedded in APK
 - Full Software Development Plan: `docs/iec62304/SOFTWARE_DEVELOPMENT_PLAN.md`
 
 ### Cybersecurity (FDA Pre-Market Guidance 2023)
 - SQLCipher AES-256-GCM encryption for all PHI at rest
-- Android Keystore hardware-backed keys — never exported to app memory
-- `FLAG_SECURE` on all windows — prevents screenshots of PHI
-- `allowBackup=false` — PHI never sent to Android cloud backup
+- Android Keystore hardware-backed keys - never exported to app memory
+- `FLAG_SECURE` on all windows - prevents screenshots of PHI
+- `allowBackup=false` - PHI never sent to Android cloud backup
 - Certificate pinning + TLS 1.3 for all network traffic
-- SHA-256 hash-chained audit log — retroactive tampering is detectable
+- SHA-256 hash-chained audit log - retroactive tampering is detectable
 - Biometric authentication at launch and on foreground resume
 - Full Cybersecurity Plan: `docs/fda_cybersecurity/CYBERSECURITY_PLAN.md`
 
@@ -92,7 +92,7 @@ KEY_PASSWORD=... \
 ```
 Unit tests:      app/src/test/
 Integration:     app/src/androidTest/
-HIL tests:       hardware-in-the-loop — requires ISM device or simulator
+HIL tests:       hardware-in-the-loop - requires ISM device or simulator
 ```
 
 Coverage targets (enforced in CI):

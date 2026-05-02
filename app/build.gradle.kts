@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId = "com.ironsidemedical.connect"
-        minSdk = 26   // Android 8.0 — required for full Android Keystore StrongBox support
+        minSdk = 26   // Android 8.0 - required for full Android Keystore StrongBox support
         targetSdk = 35
         versionCode = 1
         versionName = "1.0.0"
@@ -30,7 +30,7 @@ android {
     signingConfigs {
         // Release signing must use hardware-backed keystore in production
         create("release") {
-            // Configured via CI environment variables — never hard-coded
+            // Configured via CI environment variables - never hard-coded
             storeFile = file(System.getenv("KEYSTORE_PATH") ?: "debug.keystore")
             storePassword = System.getenv("KEYSTORE_PASSWORD") ?: "android"
             keyAlias = System.getenv("KEY_ALIAS") ?: "androiddebugkey"
@@ -54,7 +54,7 @@ android {
             )
             signingConfig = signingConfigs.getByName("release")
             buildConfigField("Boolean", "AUDIT_VERBOSE", "false")
-            // Disable debug logs in release — required by FDA cybersecurity guidance
+            // Disable debug logs in release - required by FDA cybersecurity guidance
             buildConfigField("Boolean", "ENABLE_DEBUG_LOGGING", "false")
         }
     }

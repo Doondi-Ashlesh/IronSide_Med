@@ -13,7 +13,7 @@ import javax.inject.Inject
  * Streams live vital-sign measurements from the connected device.
  *
  * Each measurement is persisted to the encrypted database and alerts are
- * audited. The flow is cold — collection starts the pipeline and cancellation
+ * audited. The flow is cold - collection starts the pipeline and cancellation
  * stops it cleanly without leaking the BLE channel.
  */
 class MonitorVitalsUseCase @Inject constructor(

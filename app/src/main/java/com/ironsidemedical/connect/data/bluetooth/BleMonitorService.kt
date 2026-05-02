@@ -26,7 +26,7 @@ import javax.inject.Inject
  * Foreground service that keeps BLE session alive when the app is backgrounded.
  *
  * Android requires a foreground service with a visible notification for any
- * long-running BLE connection — this satisfies that requirement while also
+ * long-running BLE connection - this satisfies that requirement while also
  * persisting measurement data to the encrypted database when the UI is gone.
  *
  * IEC 62304 note: the service restarts if killed (START_STICKY) to preserve

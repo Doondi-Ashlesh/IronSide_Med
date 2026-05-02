@@ -17,7 +17,7 @@ data class VitalSigns(
     val deviceAddress: String = "",
     val sessionId: String = "",
 ) {
-    // Clinical alert thresholds — ref: IronSide Clinical Requirements Spec CRS-001
+    // Clinical alert thresholds - ref: IronSide Clinical Requirements Spec CRS-001
     val isHeartRateAbnormal: Boolean get() = heartRateBpm < 40.0 || heartRateBpm > 180.0
     val isSpo2Low: Boolean get() = spo2Percent < 90.0
     val isBloodPressureAbnormal: Boolean get() =

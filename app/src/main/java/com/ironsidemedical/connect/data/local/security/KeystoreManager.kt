@@ -17,7 +17,7 @@ import javax.inject.Singleton
  * This satisfies the FDA cybersecurity requirement for on-device key storage
  * and aligns with NIST SP 800-175B guidance on key management.
  *
- * Keys are bound to the current device enrollment — destroying the lock screen
+ * Keys are bound to the current device enrollment - destroying the lock screen
  * credential will destroy the keys, preventing data access on a stolen device.
  */
 @Singleton

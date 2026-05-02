@@ -18,7 +18,7 @@ import javax.inject.Singleton
  * The chain hash is computed over (prevHash || eventType || detail || timestamp)
  * so any retroactive edit or deletion is detectable.
  *
- * Calls are fire-and-forget from the caller's perspective — logging errors are
+ * Calls are fire-and-forget from the caller's perspective - logging errors are
  * swallowed and reported via Timber to avoid cascading failures in clinical code.
  * In production, a circuit-breaker would escalate persistent logging failures.
  *
@@ -61,7 +61,7 @@ class AuditLogger @Inject constructor(
         }
     }
 
-    /** Typed event constants — adding new events here enforces a compile-time audit vocabulary. */
+    /** Typed event constants - adding new events here enforces a compile-time audit vocabulary. */
     enum class Event(val key: String) {
         APP_LAUNCH("APP_LAUNCH"),
         USER_AUTHENTICATED("USER_AUTHENTICATED"),

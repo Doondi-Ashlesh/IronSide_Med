@@ -243,7 +243,7 @@ private fun WaitingForDataCard() {
                 .padding(24.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            Text("Connected — waiting for first measurement…", style = MaterialTheme.typography.bodyLarge)
+            Text("Connected - waiting for first measurement...", style = MaterialTheme.typography.bodyLarge)
         }
     }
 }

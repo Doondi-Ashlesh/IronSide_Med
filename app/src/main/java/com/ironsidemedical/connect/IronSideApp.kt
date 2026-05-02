@@ -32,7 +32,7 @@ class IronSideApp : Application() {
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())
         }
-        // In release builds no debug tree is planted — Timber calls become no-ops.
+        // In release builds no debug tree is planted - Timber calls become no-ops.
         // This satisfies FDA cybersecurity requirement to disable verbose logging in production.
     }
 

@@ -15,7 +15,7 @@ import dagger.hilt.android.AndroidEntryPoint
 /**
  * Single-activity host.
  *
- * FLAG_SECURE prevents screenshots and screen recording — required by
+ * FLAG_SECURE prevents screenshots and screen recording - required by
  * FDA cybersecurity guidance for apps that display or store PHI.
  * Jetpack Navigation + Compose handles all screen transitions.
  */

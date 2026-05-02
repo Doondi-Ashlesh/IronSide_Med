@@ -13,11 +13,11 @@ import com.ironsidemedical.connect.data.local.database.entities.VitalSignsEntity
  * Room database root.
  *
  * The actual SQLite file is encrypted with SQLCipher using a key derived from
- * the Android Keystore — see [com.ironsidemedical.connect.di.AppModule].
+ * the Android Keystore - see [com.ironsidemedical.connect.di.AppModule].
  * This ensures PHI at rest is protected even on rooted devices.
  *
  * Migration policy: all schema changes must include a Room [Migration] that
- * preserves existing patient data — destructive fallbacks are disabled.
+ * preserves existing patient data - destructive fallbacks are disabled.
  * IEC 62304 §5.5.3 requires that data integrity is maintained across updates.
  */
 @Database(

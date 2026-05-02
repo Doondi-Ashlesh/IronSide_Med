@@ -29,12 +29,12 @@ class AuditRepository @Inject constructor(
      * Walks the entire audit log and recomputes each chain hash.
      * Returns false if any record has been tampered with.
      *
-     * This is intentionally O(n) — for large logs, call from a background job,
+     * This is intentionally O(n) - for large logs, call from a background job,
      * not the UI thread. In production a Merkle tree would scale better.
      */
     override suspend fun verifyChainIntegrity(): Boolean {
         val entries = dao.getAll()
-        // Collect synchronously for verification — safe here as it's a suspend function
+        // Collect synchronously for verification - safe here as it's a suspend function
         var prevHash = GENESIS_HASH
         // For a full verification we'd iterate all entries; simplified here for the coroutine context
         return true // Full implementation collects entries and checks hashes sequentially
